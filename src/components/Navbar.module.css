@@ -1,0 +1,16 @@
+.nav {
+   margin: 10px 0px 0px 0px;
+   grid-area: n;
+   background: green;
+}
+a {
+   text-decoration: none;
+}
+
+.item a {
+   color: white;
+}
+
+.item__active a{
+   color: blue;
+}
