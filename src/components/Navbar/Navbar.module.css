@@ -1,7 +1,7 @@
 .nav {
    margin: 10px 0px 0px 0px;
    grid-area: n;
-   background: green;
+   background: orange;
 }
 a {
    text-decoration: none;
