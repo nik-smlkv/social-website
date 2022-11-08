@@ -1,0 +1,42 @@
+li {
+   list-style-type: none;
+}
+ul {
+   margin: 0;
+   padding: 0;
+}
+p
+{
+   padding: 0;
+   margin: 0;
+}
+.dialogs__container {
+   max-width: 1046px;
+   margin: 0 auto;
+}
+.dialogs__body {
+   display: flex;
+   align-items: center;
+}
+.dialogs__name
+{ 
+}
+.messages__dialogs {
+   display: flex;
+   align-items: center;
+   margin: 0px 0px 0px 20px;
+}
+.messages__author
+{
+   text-align: center;
+}
+.messages__avatar img {
+   width: 50px;
+}
+.name__item {
+   margin: 0px 0px 20px 0px;
+}
+.messages__window {
+   margin: 0px 0px 0px 20px;
+}
+

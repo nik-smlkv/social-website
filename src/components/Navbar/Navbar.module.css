@@ -7,10 +7,10 @@ a {
    text-decoration: none;
 }
 
-.item a {
+.item a{
    color: white;
 }
 
-.item__active a{
+a.item__active{
    color: blue;
 }
