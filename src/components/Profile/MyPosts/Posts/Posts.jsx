@@ -9,7 +9,6 @@ const Posts = (props) => {
             <span>like: {props.countOfLikes}</span>
          </div>
       </div>
-
    );
 }
 export default Posts;
