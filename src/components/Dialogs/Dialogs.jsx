@@ -5,18 +5,18 @@ import MessagesAuthor from "./MessagesAuthor/MessagesAuthor";
 import MessagesWindow from "./MessagesWindow/MessagesWindow";
 
 
-
-
 const Dialogs = (props) => {
 
-   let dialogsElement = props.state.dialogs.map(
-      d => <DialogItem name={d.name} id={d.id} />
-   );
-   let messagesElement = props.state.messages.map(
-      m => <MessagesWindow message={m.message} />
-   );
+   let dialogsElement = props.dialogsPage.dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
+   let messagesElement = props.dialogsPage.messages.map(m => <MessagesWindow message={m.message} />);
 
+   let newMessageText = props.dialogsPage.newMessageText;
 
+   const addNewMessage = () => { props.addMessage(); }
+   const changeMessage = (e) => {
+      let messageText = e.target.value;
+      props.updateMessage(messageText);
+   }
    return (
       <section className="dialogs">
          <div className="dialogs__container">
@@ -30,7 +30,11 @@ const Dialogs = (props) => {
                      {messagesElement}
                   </div>
                </div>
-
+               <div>
+                  <textarea onChange={changeMessage} value={newMessageText}>
+                  </textarea>
+                  <button onClick={addNewMessage}>Add Message</button>
+               </div>
             </div>
          </div>
       </section>
