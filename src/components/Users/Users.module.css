@@ -3,3 +3,10 @@
    height: 100px;
    background: no-repeat;
 }
+.padding {
+   padding: 20px;
+}
+
+.span__style{
+   font-weight: bold;
+}
