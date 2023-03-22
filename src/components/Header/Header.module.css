@@ -1,8 +1,23 @@
 .header {
+   padding: 0px 20px;
    grid-area: h;
    background: green;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .header img {
    max-width: 50px;
+}
+
+.login{
+}
+.login a{
+   text-decoration: none;
+   color: black;
+}
+
+.login a:hover{
+   color:brown;
 }
